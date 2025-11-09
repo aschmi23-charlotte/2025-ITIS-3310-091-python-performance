@@ -1,9 +1,16 @@
-import timeit, subprocess
+import timeit, subprocess, platform, json
 
 def fprint(*args, **kwargs):
     print(*args, **kwargs, flush=True)
 
 fprint("Testing Script - Counting the prime numbers between 1 and 100000 using Python, NodeJS, Java, and C.")
+fprint("Platform Information:")
+fprint(f"{platform.platform()=}")
+fprint(f"{platform.architecture()=}")
+fprint(f"{platform.machine()=}")
+fprint(f"{platform.processor()=}")
+fprint(f"{platform.system()=}")
+
 fprint("Selected Runtimes: ")
 
 fprint("\nPython (Runtime):")

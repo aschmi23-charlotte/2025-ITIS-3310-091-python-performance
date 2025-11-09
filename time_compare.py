@@ -5,13 +5,12 @@ def fprint(*args, **kwargs):
 
 fprint("Testing Script - Counting the prime numbers between 1 and 100000 using Python, NodeJS, Java, and C.")
 fprint("Platform Information:")
-fprint(f"{platform.platform()=}")
-fprint(f"{platform.architecture()=}")
-fprint(f"{platform.machine()=}")
-fprint(f"{platform.processor()=}")
-fprint(f"{platform.system()=}")
+fprint(f"\t{platform.platform()=}")
+fprint(f"\t{platform.architecture()=}")
+fprint(f"\t{platform.machine()=}")
+fprint(f"\t{platform.processor()=}")
 
-fprint("Selected Runtimes: ")
+fprint("\nSelected Runtimes: ")
 
 fprint("\nPython (Runtime):")
 subprocess.run(["python", "--version"])
